@@ -315,6 +315,7 @@ function AccountUpdate(data, socket) {
 				if (data.Reputation != null) Account[P].Reputation = data.Reputation;
 				if (data.Description != null) Account[P].Description = data.Description;
 				if ((data.BlockItems != null) && Array.isArray(data.BlockItems)) Account[P].BlockItems = data.BlockItems;
+				if ((data.OptedItems != null) && Array.isArray(data.OptedItems)) Account[P].OptedItems = data.OptedItems;
 				if ((data.LimitedItems != null) && Array.isArray(data.LimitedItems)) Account[P].LimitedItems = data.LimitedItems;
 				if ((data.WhiteList != null) && Array.isArray(data.WhiteList)) Account[P].WhiteList = data.WhiteList;
 				if ((data.BlackList != null) && Array.isArray(data.BlackList)) Account[P].BlackList = data.BlackList;
